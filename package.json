@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "rename-apk": "ren .\\apks\\%npm_package_name%-debug.apk .\\apks\\%npm_package_name%-%npm_package_version%.apk",
+    "rename-apk": "ren .\\apks\\%npm_package_name%-debug.apk %npm_package_name%-%npm_package_version%.apk",
     "push-apk": "npm run rename-apk && git add . && git commit -am \"Added new apk\" && git push origin main"
   },
   "repository": {
