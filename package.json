@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "git add . && git commit -am \"Added new apk\" && git push origin main"
+    "rename-apk": "ren .\\apks\\john-family-%npm_package_version%-debug.apk",
+    "push-apk": "npm run rename-apk && git add . && git commit -am \"Added new apk\" && git push origin main"
   },
   "repository": {
     "type": "git",
