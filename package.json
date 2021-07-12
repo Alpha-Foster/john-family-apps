@@ -1,0 +1,25 @@
+{
+  "name": "john-family-grocery-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "updateVersionInDB": "node updateVersionInDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alpha-Foster/john-family-grocery-apps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alpha-Foster/john-family-grocery-apps/issues"
+  },
+  "homepage": "https://github.com/Alpha-Foster/john-family-grocery-apps#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongodb": "^3.6.10"
+  },
+  "devDependencies": {}
+}
