@@ -3,7 +3,7 @@ const MongoClient = require('mongodb').MongoClient
 const URL = process.env.DB_CONNECTION_STRING || ''
 const VERSION = process.env.ANDROID_APP_VERSION || ''
 
-MongoClient.connect(URL, function (err, db) {
+MongoClient.connect(URL, { useUnifiedTopology: true }, function (err, db) {
     if (err) throw err;
     const dbo = db.db("grocery");
     dbo.collection("appDetails").updateOne({}, {
